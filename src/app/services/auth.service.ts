@@ -19,6 +19,7 @@ export class AuthService {
     });
   }
 
+  // Método para crear un usuario tanto en FireBase Auth como en el FireStore.
   crearUsuario(nombre: string, correo: string, password: string) {
     return this.auth
       .createUserWithEmailAndPassword(correo, password)
