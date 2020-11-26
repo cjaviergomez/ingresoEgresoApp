@@ -60,6 +60,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         console.log(credenciales);
         // Swal.close();
         this.store.dispatch(ui.stopLoading());
+        console.log('Ir a /');
         this.router.navigate(['/']);
       })
       .catch((err) => {
